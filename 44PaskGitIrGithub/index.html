@@ -43,8 +43,29 @@
             <p>Vienas svarbiausių šakų apsaugos taisyklių yra "Pull Request"(bandymas vienos šakos commit'us sukelti į kitą šaką(merge)) <br>
             Pull Request taisyklės viduje dar reiktų suteikti "Require approvals" nustatymą, kuris reikalauja, kad nurodytas kiekis kitų projekto daluyvių patvirtintų tą Pull Request'ą, norint, kad šakos būtų apjungtos</p>
         </section>
-        <section><!--Eili6kumas Pull Request-->
+        <section><!--Eiliškumas Pull Request-->
             <h2>Eiliškumas Pull Request</h2>
+            <p>Kaip elgtis,darant užduotį</p>
+            <ol>
+                <li>Susikurti naują šaką git branch naujaSaka</li>
+                <li>Nueiti į susikurtą šaką git checkout naujaSaka</li>
+                <li>Atlieki užduotį, kurią apsiėmei daryti, su vienu arba keliais commit'ais
+                <ol>
+                    <li>Add'ini pakitimus git add .</li>
+                    <li>Commit'ini pakitimus git commit -m 'žinutė apie pakitimus'</li>
+
+
+                </ol>
+            </li>
+            <li>Nueiti į main/master šaką git checkout main/master</li>
+            <li>Atnaujinti main/master šaką git pull</li>
+            <li>Grįžti į savo užduoties šaką git checkout naujaSaka</li>
+            <li>Sujungti savo šaką su main/master šaka ir išspręsti konfliktus git merge main</li>
+            <li>Nusiunti savo darbinės šakos pakitimus į gitHub'ą git push</li>
+            <li>GitHub'e sukurti Pull Request'ą</li>
+            <li>Kiti komandos nariai patvirtina arba atmeta Pull Request'ą</li>
+            <li>Jeigu Pull Request'as sulaukė pakankamai patvirtinimų - vykdyti merge'ą</li>
+            </ol>
         </section>
         <section><!--Papild info-->
             <h2>Papildoma info</h2>
